@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+        #wrapper { background-color:bisque;
+                    width: 70%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding: 2em;
+                text-align: center;}
+        </style>
+        <script src="myScript.js"></script>
+
+    </head>
+<body>
+
+<div id = "wrapper">
+
+<img src = "https://www.madlibs.com/wp-content/themes/madlibs/assets/images/mdl_logo.png" width="20%" height="auto" alt="mad libs logo">
+<p>Please enter the following information:</p>
+
+<input id="pluralNoun" placeholder="a plural noun" onkeyup="document.getElementById('pluralNoun').value = document.getElementById('pluralNoun').value.toUpperCase();"><br>
+<input id="noun1" placeholder="a noun" onkeyup="document.getElementById('noun1').value = document.getElementById('noun1').value.toUpperCase();"><br>
+<input id="noun2" placeholder="another noun" onkeyup="document.getElementById('noun2').value = document.getElementById('noun2').value.toUpperCase();"><br>
+<!-- Interestinly, I found that both of these methods worked to convert text that is entered to uppercase -->
+<input id="song" placeholder="song" onkeyup="this.value = this.value.toUpperCase();"><br>
+<input id="verb" placeholder="verb" onkeyup="this.value = this.value.toUpperCase();"><br>
+
+
+<button type="button" id="submit">Submit</button>
+<button type="button" id="goagain" hidden>Go Again</button>
+
+<p>Learning to drive is a tricky process</p>
+<p>1. Keep two <span id="pluraloutput">___</span> on the steering wheel at all times.</p>
+<p>2. Step on the <span id="noun1output">___ </span> to speed up and the <span id="noun2output">___ </span> to slow down.</p>
+<p>3. <span id="songoutput">____</span></p>
+<p>4. Honk when you see <span id="verboutput">___</span> on a street sign.</p>
+
+
+
+</div>
+</body>
+</html> 
